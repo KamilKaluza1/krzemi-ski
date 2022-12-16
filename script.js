@@ -1,8 +1,10 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const square = entry.target.querySelector('.witaj-img');
+      
   
       if (entry.isIntersecting) {
+        
         square.classList.add('witaj-animation');
         return; // if we added the class, exit the function
       }
@@ -13,3 +15,49 @@ const observer = new IntersectionObserver(entries => {
   });
   
   observer.observe(document.querySelector('.witaj'));
+// section two text element animation 
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.anime-text-container ');
+      
+  
+      if (entry.isIntersecting) {
+        
+        square.classList.add('fade-in');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      square.classList.remove('fade-in');
+    });
+  });
+
+  observer2.observe(document.querySelector('.text-container'));
+
+
+  observer.observe(document.querySelector('.witaj'));
+
+
+
+  // section 3 image element animation 
+
+
+
+
+    const observer3 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const square = entry.target.querySelector('.konferansjer-img ');
+        
+    
+        if (entry.isIntersecting) {
+          
+          square.classList.add('fade-in');
+          return; // if we added the class, exit the function
+        }
+    
+        // We're not intersecting, so remove the class!
+        square.classList.remove('fade-in');
+      });
+    });
+  
+    observer3.observe(document.querySelector('.konferansjer-img-container'));

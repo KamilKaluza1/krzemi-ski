@@ -12,8 +12,11 @@
   --color-pastel-blue: hsl(228, 100%, 84%);
   --color-light-blue: hsl(206, 94%, 87%);
   --color-alabaster: hsl(231, 100%, 99%);
+  --color-square: hsla(46, 86%, 49%, 0.418);
 }
-
+img, p, small, span{
+z-index: 10;
+}
 * {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -64,7 +67,7 @@ li:hover {
 }
 
 .first-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.205), white);
+  background: linear-gradient(rgba(0, 0, 0, 0.158), white);
 }
 
 .witaj {
@@ -91,7 +94,7 @@ li:hover {
     color: var(--secondaryText);
 }
 
-.sec-section{
+.sec-section, .third-section{
     background: linear-gradient(var(--color-alabaster), white);
 }
 
@@ -111,42 +114,122 @@ li:hover {
     height:600px;
 }
 
+.container-two{
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    
+}
+.konferansjer-text-container{
+    position: relative;
+    z-index: 4;
+    max-width: 350px;
+    margin: 100px
+}
+
+.konferansjer-text-container small{
+    position: relative;
+    left:50px;
+    font-size: 13px;
+    
+}
+
+.konferansjer-img{
+    position: relative;
+    z-index: 4;
+    margin-top: 30px;
+    height:600px;
+    z-index: 10;
+
+}
+
+.square{
+    background-color: var(--color-square);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    top:284%;
+    /* transform: rotate(0.13turn); */
+
+    
+    
+}
 
 
 
 
 
 @media screen and (max-width: 850px) {
+    nav li {
+        display: none;
+    }
+
+
     .container-one {
       flex-direction: column;
       align-items: center;
     }
+
+
     .text-container{
         max-width: 100%;
         margin: 30px 50px;
     }
-        .dziennikarz-img{
-            object-fit:none;
-            width: 500px;
-            height: 570px;
-            object-position: 88% 0%;
-            position: relative;
-            left:-46px
-        }
-        .dziennikarz-img-container{
-            height: 400px;
-            width: 500px;
-            padding: 0px;
-            margin:0px;
-            
-    
+    .dziennikarz-img{
+        object-fit:none;
+        width: 500px;
+        height: 570px;
+        object-position: 88% 0%;
+        position: relative;
+        left:-46px
+    }
+
+    .dziennikarz-img-container{
+        height: 400px;
+        width: 500px;
+        padding: 0px;
+        margin:0px;
+
     }
     .witaj img{
         position: relative;
         left: 50px;
     }
 
+    .container-two {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+      .h-conf{
+        margin-top: 200px;
+      }
+      .konferansjer-text-container{
+        margin: 50px;
+        padding: 10px;
+      }
+      .konferansjer-text-container small{
+        /* padding:200px; */
+      }
         
+      .konferansjer-img{
+        object-fit:none;
+        width: 500px;
+        height: 500px;
+        object-position: 88% 0%;
+        position: relative;
+        left: -14px;
+        top:-27px;
+    }
+    .konferansjer-img-container{
+        height: 400px;
+        width: 500px;
+        padding: 0px;
+        margin:0px;
+
+    }
+
 
   }
 
@@ -174,3 +257,68 @@ li:hover {
     animation-duration: 2s;
   }
 }
+
+
+@keyframes slidein {
+    from {
+        transform: translateX(-200px);
+      /* width: 150%; */
+      opacity: 0;
+    }
+  
+    to {
+        transform: translateX(0);
+      /* width: 100%; */
+      opacity:1;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .fade-in {
+      animation-name: slidein;
+      animation-duration: 1.5s;
+    }
+  }
+
+  /*  */
+
+  @keyframes slideout {
+    from {
+      margin-left: 200%;
+      /* width: 150%; */
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0;
+      /* width: 100%; */
+      opacity:1;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .fade-out {
+      animation-name: slideout;
+      animation-duration: 1.5s;
+    }
+  }
+
+    /*  swing */
+
+    @keyframes swing {
+        from {
+          transform: rotate(0turn);
+        }
+      
+        to {
+            transform: rotate(0.5turn);
+        }
+      }
+      
+      @media (prefers-reduced-motion: no-preference) {
+        .swing {
+          animation-name: swing;
+          animation-duration: 10s;
+          animation: infinite;
+        }
+      }
