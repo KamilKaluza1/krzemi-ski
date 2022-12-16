@@ -40,7 +40,6 @@ const observer3 = new IntersectionObserver((entries) => {
 
     if (entry.isIntersecting) {
       square.classList.add("fade-in");
-      squareTwo.classList.add("fade-in");
       return; // if we added the class, exit the function
     }
 
@@ -59,7 +58,6 @@ const observer4 = new IntersectionObserver((entries) => {
 
     if (entry.isIntersecting) {
       square.classList.add("fade-out");
-      squareTwo.classList.add("fade-out");
       return; // if we added the class, exit the function
     }
 
@@ -69,3 +67,22 @@ const observer4 = new IntersectionObserver((entries) => {
 });
 
 observer4.observe(document.querySelector(".square-container"));
+
+
+// section 3 rect two element animation
+
+const observer5 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".dron-image ");
+
+    if (entry.isIntersecting) {
+      square.classList.add("dron-fly");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("dron-fly");
+  });
+});
+
+observer5.observe(document.querySelector(".dron-box"));

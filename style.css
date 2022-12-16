@@ -96,7 +96,7 @@ li:hover {
     color: var(--secondaryText);
 }
 
-.sec-section, .third-section{
+.sec-section, .third-section, .four-section{
     background: linear-gradient(var(--color-alabaster), white);
 }
 
@@ -129,7 +129,7 @@ li:hover {
     margin: 100px
 }
 
-.konferansjer-text-container small{
+.konferansjer-text-container small, .four-anime-text-container small{
     position: relative;
     left:50px;
     font-size: 13px;
@@ -207,10 +207,72 @@ li:hover {
   animation: swing 1s infinite linear;
 
 }
+/* 
+
+
+33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
 
 
 
 
+
+*/
+.container-four{
+  display: flex;
+  justify-content: center;
+}
+.four-text-container{
+  max-width: 350px;
+  margin: 50px
+
+}
+
+
+
+.maciej-dronuje-img{
+  margin-top: 30px;
+  height:600px;
+}
+
+.container-two{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.dron-image{
+  width: 170px;
+
+}
+
+@keyframes fly {
+  0% {
+      transform: translateX(-1000%);
+
+  }
+  25%{
+    transform: translateY(-200%);
+  }
+
+  50% {
+      transform: translateX(200%) translateY(600%);
+
+  }
+  75%{
+      transform: translateX(-600%) translateY(400%);;
+
+  }
+  100%{
+
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .dron-fly {
+    animation-name: fly;
+    animation-duration: 2s;
+  }
+}
 
 
 @keyframes rotate{
@@ -297,6 +359,45 @@ li:hover {
         padding: 0px;
         margin:0px;
 
+    }
+
+    .container-four {
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .four-text-container{
+        max-width: 100%;
+        margin: 30px 50px;
+    }
+    .maciej-dronuje-img{
+        object-fit:none;
+        width: 500px;
+        height: 370px;
+        object-position: 88% 0%;
+        position: relative;
+        left:-46px
+    }
+
+    .video-img-container{
+      margin-top: 150px;
+        height: 400px;
+        width: 500px;
+        padding: 0px;
+        margin:0px;
+
+    }
+    .dron-image{
+      position: absolute;
+      top: 39%;
+      left:33%
+    }
+    .container-four{
+      position: relative;
+    }
+    .dron-conf{
+      margin-top: 100px;
     }
 
 
@@ -392,3 +493,9 @@ li:hover {
         }
       }
 
+
+
+
+/*       
+
+      } */
