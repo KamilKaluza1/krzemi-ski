@@ -128,15 +128,22 @@ li:hover {
         .dziennikarz-img{
             object-fit:none;
             width: 500px;
-            height: 550px;
-            object-position: 100% 0%;
+            height: 570px;
+            object-position: 88% 0%;
+            position: relative;
+            left:-46px
         }
         .dziennikarz-img-container{
             height: 400px;
-            width: min-content;
+            width: 500px;
             padding: 0px;
             margin:0px;
+            
     
+    }
+    .witaj img{
+        position: relative;
+        left: 50px;
     }
 
         
