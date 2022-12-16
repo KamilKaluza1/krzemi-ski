@@ -1,6 +1,6 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      const square = entry.target.querySelector('.witaj-img');
+      const square = entry.target.querySelector('.witaj');
   
       if (entry.isIntersecting) {
         square.classList.add('witaj-animation');
@@ -12,4 +12,4 @@ const observer = new IntersectionObserver(entries => {
     });
   });
   
-  observer.observe(document.querySelector('.square-wrapper'));
+  observer.observe(document.querySelector('.witaj'));
