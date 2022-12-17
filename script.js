@@ -57,12 +57,12 @@ const observer4 = new IntersectionObserver((entries) => {
     const square = entry.target.querySelector(".square-two ");
 
     if (entry.isIntersecting) {
-      square.classList.add("fade-out");
+      square.classList.add("fade-up");
       return; // if we added the class, exit the function
     }
 
     // We're not intersecting, so remove the class!
-    square.classList.remove("fade-out");
+    square.classList.remove("fade-up");
   });
 });
 

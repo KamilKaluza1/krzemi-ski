@@ -237,7 +237,7 @@ li:hover {
   position: absolute;
   z-index: 1;
   top: 15%;
-  left: 53%;
+  left:13%;
 
 
 }
@@ -489,7 +489,18 @@ margin-top: 40px;
 
 @media screen and (max-width: 850px) {
 
+  .hamburger{
 
+    left: 60%;
+
+  }
+
+  .witaj img {
+
+    padding-right: 0;
+  
+  
+  }
 
     .container-one {
       flex-direction: column;
@@ -515,7 +526,6 @@ margin-top: 40px;
         width: 500px;
         padding: 0px;
         margin:0px;
-
     }
 
 
@@ -813,9 +823,101 @@ margin-top: 40px;
         }
       }
 
+@media screen and (max-width: 450px) {
+  .hamburger {
+    left: 78%;
+    top:2%;
+}
 
+  .dziennikarz-img{
+    object-fit:none;
+    width: 375px;
+    height: 570px;
+    object-position: 88% 0%;
+    position: relative;
+    left:-46px
+}
 
+.dziennikarz-img-container{
+    height: 400px;
+    width: 375px;
+    padding: 0px;
+    margin:0px;
+}
+.social-img {
+  object-fit: none;
+  width: 375px;
+  height: 500px;
+  object-position: 88% 0%;
+  position: relative;
+  left: 17px;
+  top: -64px;
+}
+.medialne-img {
+  padding: 0;
+  margin: 0;
+  object-fit: none;
+  width: 376px;
+  height: 500px;
+  object-position: 88% 0%;
+  position: relative;
+  left: -3px;
+  top: -123px;
+}
 
-/*       
+.medialne-img-container{
+  height: 400px;
+  width: 375px;
+  padding: 0px;
+  margin:0px;
+}
 
-      } */
+.five-image-container {
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  width: 375px;
+  padding: 0px;
+  margin: 0px;
+}
+.social-img {
+  object-fit: none;
+  width: 357px;
+  height: 500px;
+  object-position: 88% 0%;
+  position: relative;
+  left: 17px;
+  top: -64px;
+}
+.konferansjer-img {
+  object-fit: none;
+  width: 375px;
+  height: 500px;
+  object-position: 88% 0%;
+  position: relative;
+  left: 1px;
+  top: -27px;
+}
+.konferansjer-img-container {
+  height: 400px;
+  width: 375px;
+  padding: 0px;
+  margin: 0px;
+}
+.video-img-container {
+  margin-top: 150px;
+  height: 400px;
+  width: 375px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.maciej-dronuje-img {
+  object-fit: none;
+  width: 370px;
+  height: 370px;
+  object-position: 84% 0%;
+  position: relative;
+  left: -46px;
+}
+}
