@@ -54,9 +54,45 @@ li:hover {
 
 .nav ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-
   text-transform: uppercase;
+  margin-top: 20vh;
+}
+.nav{
+
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background:white;
+  border-radius: 9px;
+  z-index: 100;
+  display:none;
+  transition: 0.3s;
+}
+
+.hamburger{
+  position: fixed;
+  top: 10%;
+  left: 80%;
+  z-index: 101;
+}
+.stick{
+  margin: 10px;
+  border: 2px solid;
+  width: 50px;
+  background-color: black;
+}
+
+
+.nav li {
+
+  font-size: 15px;
+  margin:20px;
+  padding:0
 }
 
 .logo {
@@ -66,8 +102,8 @@ li:hover {
 }
 
 .logo img {
-  width: 200px;
-  margin: 20px 0 30px 0;
+  width: 250px;
+  margin: 30px 0 40px 0;
 }
 
 .first-section {
@@ -84,7 +120,8 @@ li:hover {
 }
 .witaj img {
   height: 550px;
-  padding-right: 100px;
+
+
 }
 
 .heading{
@@ -438,9 +475,7 @@ margin-top: 40px;
 
 
 @media screen and (max-width: 850px) {
-    nav li {
-        display: none;
-    }
+
 
 
     .container-one {
@@ -469,10 +504,7 @@ margin-top: 40px;
         margin:0px;
 
     }
-    .witaj img{
-        position: relative;
-        left: 50px;
-    }
+
 
     .container-two {
         flex-direction: column-reverse;
