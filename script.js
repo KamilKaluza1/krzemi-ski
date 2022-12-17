@@ -182,13 +182,60 @@ hamburger.addEventListener('click', () => {
 
 
 
-x.addEventListener('click', () => { 
-  const nav = document.querySelector(".nav");
-    nav.classList.add("none");
-    x.classList.add("none");
-    hamburger.classList.remove("none");
+x.addEventListener('click', hideNavbar)
+
+
+
+
+
+const dziennikarz = document.querySelector(".dziennikarz");
+const konferansjer = document.querySelector(".konferansjer");
+const video = document.querySelector(".video");
+const social = document.querySelector(".social");
+const szkolenia = document.querySelector(".szkolenia");
+const kontakt = document.querySelector(".kontakt");
+
+
+kontakt.addEventListener('click', ()=>{
+  document.querySelector(".eight-section").scrollIntoView();
+  hideNavbar();
 })
 
-addEventListener('click', ()=>{
-  window.scrollTo(0, 1000)
+szkolenia.addEventListener('click', ()=>{
+  document.querySelector(".six-section").scrollIntoView();
+  hideNavbar();
 })
+
+social.addEventListener('click', ()=>{
+  document.querySelector(".five-section").scrollIntoView();
+  hideNavbar();
+})
+
+dziennikarz.addEventListener('click', ()=>{
+  document.querySelector(".sec-section").scrollIntoView();
+  hideNavbar();
+})
+
+konferansjer.addEventListener('click', ()=>{
+  document.querySelector(".third-section").scrollIntoView();
+  hideNavbar();
+})
+
+video.addEventListener('click', ()=>{
+  document.querySelector(".four-section").scrollIntoView();
+  hideNavbar();
+})
+
+
+
+
+
+
+
+
+function hideNavbar(){
+  const nav = document.querySelector(".nav");
+  nav.classList.add("none");
+  x.classList.add("none");
+  hamburger.classList.remove("none");
+}
