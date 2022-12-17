@@ -170,3 +170,25 @@ observer9.observe(document.querySelector(".medialne-img-container"));
 
 
 ////////
+
+const hamburger = document.querySelector(".hamburger");
+const x = document.querySelector(".x");
+hamburger.addEventListener('click', () => { 
+  const nav = document.querySelector(".nav");
+    nav.classList.remove("none");
+    hamburger.classList.add("none");
+    x.classList.remove("none");
+})
+
+
+
+x.addEventListener('click', () => { 
+  const nav = document.querySelector(".nav");
+    nav.classList.add("none");
+    x.classList.add("none");
+    hamburger.classList.remove("none");
+})
+
+addEventListener('click', ()=>{
+  window.scrollTo(0, 1000)
+})
