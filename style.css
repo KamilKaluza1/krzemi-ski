@@ -404,7 +404,8 @@ margin: 20px 20px;
 }
 
 .contact span{
-font-size: 14px;
+font-size: 16px;
+font-weight: 600;
 }
 
 
@@ -835,10 +836,10 @@ margin-top: 40px;
     height: 570px;
     object-position: 88% 0%;
     position: relative;
-    left:-46px
-}
+    left: -6px;
+  }
 
-.dziennikarz-img-container{
+  .dziennikarz-img-container{
     height: 400px;
     width: 375px;
     padding: 0px;
@@ -921,3 +922,5 @@ margin-top: 40px;
   left: -46px;
 }
 }
+
+
