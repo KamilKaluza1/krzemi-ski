@@ -226,13 +226,6 @@ video.addEventListener('click', ()=>{
   hideNavbar();
 })
 
-
-
-
-
-
-
-
 function hideNavbar(){
   const nav = document.querySelector(".nav");
   nav.classList.add("none");
