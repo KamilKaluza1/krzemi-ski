@@ -120,7 +120,7 @@ li:hover {
 
 .first-section {
 
-  background: radial-gradient(circle, rgba(0,0,0,0.11278014623818278) 51%, rgba(69,69,69,0.4265056364342612) 85%, rgba(0,0,0,0.34807426388524154) 99%);
+  background: radial-gradient(circle, rgba(0,0,0,0.11278014623818278) 51%, rgba(69,69,69,0.28644961402529767) 85%, rgba(0,0,0,0.21362048237263653) 100%);;
 }
 .eight-section{
   background: linear-gradient(white, rgba(7, 97, 199, 0.356));
@@ -752,7 +752,7 @@ margin-top: 40px;
 @media (prefers-reduced-motion: no-preference) {
   .fade-up {
     animation-name: slideup;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
   }
 }
 
