@@ -86,3 +86,87 @@ const observer5 = new IntersectionObserver((entries) => {
 });
 
 observer5.observe(document.querySelector(".dron-box"));
+
+
+
+// 
+
+const observer6 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".social-img ");
+
+    if (entry.isIntersecting) {
+      square.classList.add("fade-up");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("fade-up");
+  });
+});
+
+observer6.observe(document.querySelector(".five-image-container"));
+
+
+
+
+////
+
+const observer7 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".five-text-container ");
+
+    if (entry.isIntersecting) {
+      square.classList.add("fade-down");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("fade-down");
+  });
+});
+
+observer7.observe(document.querySelector(".animation-five-text-container"));
+
+
+////////
+
+
+const observer8 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".six-anime-text-container ");
+
+    if (entry.isIntersecting) {
+      square.classList.add("fade-up");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("fade-up");
+  });
+});
+
+observer8.observe(document.querySelector(".six-text-container"));
+
+
+
+////
+
+const observer9 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const square = entry.target.querySelector(".medialne-img ");
+
+    if (entry.isIntersecting) {
+      square.classList.add("fade-in");
+      return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+    square.classList.remove("fade-in");
+  });
+});
+
+observer9.observe(document.querySelector(".medialne-img-container"));
+
+
+////////
