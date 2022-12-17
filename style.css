@@ -51,6 +51,7 @@ li:hover {
   transition: 0.3s;
 }
 
+
 .nav ul {
   display: flex;
   justify-content: center;
@@ -61,6 +62,7 @@ li:hover {
 .logo {
   display: flex;
   justify-content: center;
+  opacity: 0.7;
 }
 
 .logo img {
@@ -70,6 +72,10 @@ li:hover {
 
 .first-section {
   background: linear-gradient(rgba(0, 0, 0, 0.158), white);
+}
+
+.eight-section{
+  background: linear-gradient(white, rgba(7, 97, 199, 0.356));
 }
 
 .witaj {
@@ -96,8 +102,24 @@ li:hover {
     color: var(--secondaryText);
 }
 
-.sec-section, .third-section, .four-section{
+.third-section{
     background: linear-gradient(var(--color-alabaster), white);
+}
+
+.sec-section{
+  background: linear-gradient(#f3f6fb, white);
+}
+
+
+.four-section{
+  background: linear-gradient(#e5f7f7, white);
+}
+
+.five-section{
+  background:linear-gradient(hsla(263, 86%, 49%, 0.075), white);
+}
+.six-section{
+  background:linear-gradient(hsla(175, 86%, 49%, 0.075), white);
 }
 
 .container-one{
@@ -235,16 +257,6 @@ li:hover {
   width: 170px;
 
 }
-/* 
-
-
-33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-
-
-
-
-
-*/
 
 .container-five{
   display: flex;
@@ -294,7 +306,90 @@ margin: 20px 20px;
   position: relative;
   
 }
+/* 
 
+
+33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+
+
+
+
+
+*/
+
+.container-six{
+  display: flex;
+  justify-content: center;
+}
+.six-text-container{
+  max-width: 350px;
+  margin: 50px
+
+}
+
+.medialne-img{
+  margin-top: 60px;
+  height:600px;
+}
+
+.container-two{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.contact{
+  display: flex;
+  align-content: center;
+}
+.contact img{
+  width: 25px;
+}
+.contact a{
+  text-decoration: none;
+  color: black;
+
+  padding: 10px;
+}
+
+.contact span{
+font-size: 14px;
+}
+
+
+.contact span:hover{
+  border-bottom: solid 3px var(--secondaryText);
+  transition: 0.3s;
+  }
+
+
+
+.container-eight{
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.links{
+  padding: 40px;
+}
+.social-container img{
+  width: 75px;
+  margin: 10px;
+}
+
+.social-container {
+margin-top: 40px;
+}
+.eight-text-container{
+  max-width: 500px;
+  margin: 30px 0;
+  font-size: 10px;
+}
+.eight-text-container p{
+  font-size: 12px;
+  line-height: 20px;
+}
 
 
 @keyframes fly {
@@ -355,8 +450,8 @@ margin: 20px 20px;
 
 
     .text-container{
-        max-width: 100%;
-        margin: 30px 50px;
+      max-width: 350px;
+      margin: 50px
     }
     .dziennikarz-img{
         object-fit:none;
@@ -416,8 +511,8 @@ margin: 20px 20px;
 
 
     .four-text-container{
-        max-width: 100%;
-        margin: 30px 50px;
+      max-width: 350px;
+      margin: 50px
     }
     .maciej-dronuje-img{
         object-fit:none;
@@ -479,6 +574,58 @@ margin: 20px 20px;
 
   }
 
+
+
+
+
+
+
+
+  .container-six {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .six-conf{
+    margin-top: 70px;
+  }
+  .six-text-container{
+    margin: 50px;
+    padding: 10px;
+  }
+
+  .medialne-img{
+    object-fit:none;
+    width: 500px;
+    height: 500px;
+    object-position: 88% 0%;
+    position: relative;
+    left: 52px;
+    top: -86px;
+}
+.five-image-container{
+    height: 400px;
+    width: 500px;
+    padding: 0px;
+    margin:0px;
+
+}
+.bio{
+  display: none;
+}
+.social-container img{
+  width: 50px;
+}
+.contact{
+  justify-content: center;
+}
+.social-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+
   }
 
 
@@ -502,7 +649,7 @@ margin: 20px 20px;
 @media (prefers-reduced-motion: no-preference) {
   .witaj-animation {
     animation-name: appear;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
 }
 
