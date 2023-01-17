@@ -25,7 +25,7 @@ z-index: 10;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* transition: 0.3s; */
+  transition: 0.3s;
 }
 p{
     font-size: 14px;
@@ -35,6 +35,9 @@ p{
 }
 b{
     font-weight: 600;
+}
+b:hover{
+    font-size:15px;;
 }
 
 li {
@@ -119,8 +122,8 @@ li:hover {
 }
 
 .first-section {
+  background:linear-gradient(hsla(0, 0%, 0%, 0.041), white);
 
-  background: radial-gradient(circle, rgba(0,0,0,0.11278014623818278) 51%, rgba(69,69,69,0.28644961402529767) 85%, rgba(0,0,0,0.21362048237263653) 100%);;
 }
 .eight-section{
   background: linear-gradient(white, rgba(7, 97, 199, 0.356));
@@ -467,7 +470,7 @@ margin-top: 40px;
 @media (prefers-reduced-motion: no-preference) {
   .dron-fly {
     animation-name: fly;
-    animation-duration: 2s;
+    animation-duration: 5s;
   }
 }
 
@@ -490,11 +493,10 @@ margin-top: 40px;
 
 @media screen and (max-width: 850px) {
 
-  .hamburger{
-
-    left: 60%;
-
-  }
+  .hamburger {
+    left: 78%;
+    top:2%;
+}
 
   .witaj img {
 
