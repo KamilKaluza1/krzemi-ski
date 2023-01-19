@@ -1,3 +1,6 @@
+localStorage.clear();
+
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const square = entry.target.querySelector(".witaj-img");
